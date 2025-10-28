@@ -1,0 +1,5 @@
+/* Estilos específicos para la página de cartas rare */
+.category-page h1 {
+  color: #007bff; /* Un color azul para Rare */
+  margin-bottom: 20px;
+}

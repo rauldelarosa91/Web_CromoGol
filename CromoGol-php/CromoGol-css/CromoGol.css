@@ -1,0 +1,307 @@
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #ffffff;
+  color: #333;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.logo a {
+  color: #0da412;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav li {
+  margin-left: 0;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #0da412;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #daf9dc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Añadido para que se ajuste en pantallas pequeñas */
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #008000;
+  flex: 1 1 100%; /* Añadido para que el título ocupe todo el ancho */
+  text-align: center; /* Añadido para centrar el título */
+}
+
+.hero p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 500px;
+  flex: 1 1 100%; /* Añadido para que el párrafo ocupe todo el ancho */
+  text-align: center; /* Añadido para centrar el párrafo */
+}
+
+.explorar-categorias-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #008000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+  flex: 1 1 100%; /* Añadido para que el botón ocupe todo el ancho */
+  text-align: center; /* Añadido para centrar el botón */
+}
+
+.explorar-categorias-btn:hover {
+  background-color: #0f910f;
+  transform: scale(1.05);
+}
+
+.topps-simplicidad {
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.topps-simplicidad h3 {
+  font-size: 1.8em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.topps-simplicidad p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.topps-simplicidad img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 2em 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.featured-categories {
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.featured-categories h3 {
+  font-size: 1.5em;
+  color: #0da412;
+  margin-bottom: 20px;
+}
+
+.featured-categories ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.featured-categories ul li a {
+  color: #0da412;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  font-size: 1.3em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.featured-categories ul li a:hover {
+  color: #0da412;
+  background-color: #dee2e6;
+  transform: scale(1.05);
+}
+
+.boton-verde {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50; /* Verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton-verde:hover {
+  background-color: #45a049;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .topps-simplicidad img {
+    width: 90%;
+  }
+
+  .featured-categories ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Estilos para el icono del carrito en la navegación (AÑADIDO) */
+header nav ul li.carrito a img {
+  width: 27px; /* Ajusté el tamaño a 25px como ejemplo */
+  height: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+header nav ul li.carrito a span#contador-carrito {
+  font-size: 0.8em;
+  color: #555;
+  vertical-align: middle;
+}
+
+header nav ul li.carrito a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5em 0;
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .explorar-categorias-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .topps-simplicidad img {
+    width: 100%;
+  }
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333; /* Puedes cambiar el color de fondo */
+  color: white;
+  padding: 20px 0; /* Añade un poco de padding arriba y abajo */
+  text-align: center; /* Centra el texto */
+  margin-top: 50px; /* Añade un margen superior para separarlo del contenido */
+  width: 100%; /* Ocupa todo el ancho */
+  position: relative; /* Asegura que se comporte como bloque */
+  bottom: 0; /* Si quieres que esté siempre abajo (puede superponerse en contenido corto) */
+}
+
+footer p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+  font-size: 0.9em; /* Ajusta el tamaño de la fuente si lo deseas */
+}

@@ -1,0 +1,5 @@
+/* Estilos específicos para la página de cartas special */
+.category-page h1 {
+  color: #ff8c00; /* Un color naranja para Special */
+  margin-bottom: 20px;
+}

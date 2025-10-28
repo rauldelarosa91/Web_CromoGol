@@ -1,0 +1,5 @@
+/* Estilos específicos para la página de cartas autographed */
+.category-page h1 {
+  color: #dc3545; /* Un color rojo para Autographed */
+  margin-bottom: 20px;
+}

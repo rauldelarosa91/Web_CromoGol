@@ -1,0 +1,5 @@
+/* Estilos específicos para la página de cartas rookie */
+.category-page h1 {
+  color: #28a745; /* Un color verde para Rookie */
+  margin-bottom: 20px;
+}
